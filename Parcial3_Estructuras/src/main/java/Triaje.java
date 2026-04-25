@@ -7,7 +7,6 @@ public class Triaje {
         if (p.dolencia.equalsIgnoreCase("Golpe en la cabeza") || p.dolor >= 8) {
             return "ALTA";
         }
-        // Factores sociales: abuelitos solos o menores (según el PDF)
         if ((p.edad >= 70 && p.social.equalsIgnoreCase("Vive solo")) || p.social.equalsIgnoreCase("Menor de edad")) {
             return "ALTA";
         }

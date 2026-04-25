@@ -17,7 +17,6 @@ public class Paciente implements Comparable<Paciente> {
         this.social = social;
     }
 
-    // 👇 AQUÍ lo agregas (debajo del constructor por ejemplo)
     public String getId() {
         return id;
     }

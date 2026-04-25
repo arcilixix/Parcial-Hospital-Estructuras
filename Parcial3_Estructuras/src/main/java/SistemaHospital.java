@@ -45,7 +45,6 @@ public class SistemaHospital {
                 }
             }
 
-            // 2 de media
             for (int i = 0; i < 2 && !colaMedia.isEmpty(); i++) {
                 Paciente p = colaMedia.poll();
                 tiempo++;
@@ -58,7 +57,6 @@ public class SistemaHospital {
                 }
             }
 
-            // 1 de baja
             if (!colaBaja.isEmpty()) {
                 Paciente p = colaBaja.poll();
                 tiempo++;
@@ -76,7 +74,6 @@ public class SistemaHospital {
 
         System.out.println("NO QUEDAN PACIENTES");
 
-        // estadísticas simples
         System.out.println("\nESTADISTICAS");
         System.out.println("Alta: " + alta);
         System.out.println("Media: " + media);
